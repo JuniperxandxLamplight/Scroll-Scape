@@ -18,6 +18,7 @@ $(function() {
   var collectedGems = 0;
   var controller = new ScrollMagic.Controller();
   var tlRightSwipe = new TimelineMax()
+  .to(".instructions", 1, {x: "-100%"})
   .fromTo("#middle-container", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
   .to(".television", 3, {"backgroundPositionY": "-750px"})
   .to(".stone-tv", 2, {left: '-30%'})
@@ -46,7 +47,7 @@ $(function() {
   })
   .setPin('#container')
   .setTween(tlRightSwipe)
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 
 
