@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>ScrollMagic #1 Setup</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
-    <script type="text/javascript" src="assets/js/scripts.js">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScrollMagic #1 Setup</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+  <script type="text/javascript" src="assets/js/scripts.js">
 
-    </script>
+  </script>
 </head>
 
 <body>
@@ -20,30 +21,69 @@
 
 
     <div id="scenery">
-      <div id="blue-container">
+      <div id="start-container">
         <div class="square-dude">
 
         </div>
       </div>
       <div class="trees-background"></div>
+      <div class="purple-gem-hotspot"></div>
+      <div class="purpleDiv gemDiv">
+        <img id="purpleGem" class="gem" src="assets/imgs/purple-gem.png" alt="Puurple">
+        <img class="sparkle purpleSparkle" src="assets/imgs/sparkle.gif" alt="sparkle">
+      </div>
       <div class="trees-foreground"></div>
       <div class="ground"></div>
       <div class="grass-background"></div>
       <div class="grass-foreground"></div>
     </div>
 
-    <div id="gray-container">
+    <div id="middle-container">
+      <div class="pipe">
+        <img class="openPipe" src="assets/imgs/pipe.png">
+        <img class="wheel" src="assets/imgs/gear.png">
+        <div class="orangeDiv gemDiv">
+          <img id="orangeGem" class="gem" src="assets/imgs/orange-gem.png" alt="orange gem">
+          <img class="sparkle" src="assets/imgs/sparkle.gif" alt="sparkle">
+        </div>
+      </div>
       <div class="stone-tv">
         <img src="assets/imgs/tv-stone.png" alt="giant stone" class="stone">
         <img src="assets/imgs/tv2.png" class="television" alt="television">
         <img src="assets/imgs/lever2.png" alt="lever" class="lever">
       </div>
-      <button class="testbutton">Click Me</button>
-    </div>
-    <div id="yellow-container">
-      <div class="door">
-        <img src="assets/imgs/door.png" alt="">
+      <div class="vendingMachine">
+        <div class="numbersDisplay"></div>
+        <div class="vendingContainer">
+          <img src="assets/imgs/machine.png" id="machine" alt="vending machine">
+          <div class="numberDiv">
+            <div class="numbers" >1</div>
+            <div class="numbers" >2</div>
+            <div class="numbers" >3</div>
+            <div class="numbers" >4</div>
+            <div class="numbers" >5</div>
+            <div class="numbers" >6</div>
+            <div class="numbers" >7</div>
+            <div class="numbers" >8</div>
+            <div class="numbers" >9</div>
+          </div>
+          <div class="blueDiv gemDiv">
+            <img id="blueGem" class="gem" src="assets/imgs/blue-gem.png" alt="blue gem">
+            <img class="sparkle" src="assets/imgs/sparkle.gif" alt="sparkle">
+          </div>
+        </div>
       </div>
+    </div>
+    <div id="end-container">
+      <div class="door">
+        <div class="gemContainer">
+        </div>
+        <img src="assets/imgs/door.png" id="exit" alt="">
+        <img class="vortex" src="assets/imgs/vortex.gif" alt="vortex">
+      </div>
+    </div>
+    <div class="victory">
+      <img src="assets/imgs/the-end.png" alt="the end">
     </div>
   </div>
 </body>

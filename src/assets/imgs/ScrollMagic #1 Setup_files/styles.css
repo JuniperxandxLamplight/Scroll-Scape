@@ -44,10 +44,6 @@ body {
   border: 3px solid white;
   background-color: red;
   z-index: 4;
-  transform-origin: top right;
-  transition: transform;
-  transition-duration: 2s;
-  transition-delay: 2s;
 }
 
 #block {
@@ -119,27 +115,17 @@ body {
 }
 
 .trees-foreground{
-  pointer-events: none;
   background-image: url('../imgs/foreground-trees.png');
   z-index: -5;
 }
 
-.purpleDiv, .purple-gem-hotspot {
-  position: absolute;
-  z-index: -8;
-  top: 50vh;
-  right: 8vw;
-  width: 2vw;
-  height: 2vh;
-}
-
 #purpleGem{
+  z-index: -8;
+  position: absolute;
+  top: 50vh;
+  right: 20vw;
+  width: 3vw;
   height: 3vh;
-  width: 3vh;
-}
-
-.purple-gem-hotspot {
-  z-index: 10;
 }
 
 .stone-tv {
@@ -186,19 +172,23 @@ body {
 
 .openPipe{
   height: 10vh;
-  width: 8vh;
+  width: 5vh;
+  background-color: violet;
   position: absolute;
   left: -50%;
   bottom: 10vh;
   z-index: 20;
 }
 .wheel{
-  height: 5vh;
-  width: 5vh;
+  height: 4vh;
+  width: 4vh;
+  background-color: purple;
   position: absolute;
   left: -49%;
   bottom: 15vh;
   z-index: 21;
+  border-radius: 50%;
+  border: 3px dashed black;
   transition: transform;
   transition-duration: 1s;
   transform: rotate(0);
@@ -207,7 +197,7 @@ body {
   height: 4vh;
   width: 4vh;
   position: absolute;
-  left: -48%;
+  left: -49%;
   bottom: 0;
 }
 #orangeGem{
@@ -222,16 +212,6 @@ body {
   height: 5vh;
   width: 5vh;
   opacity: 0;
-  z-index: 18;
-}
-.purpleSparkle{
-  display: none;
-  position: absolute;
-  transform: translate(-1vh, -1vh) rotate(250deg);
-  top: 0;
-  left: 0;
-  height: 5vh;
-  width: 5vh;
   z-index: 18;
 }
 .spinning{
@@ -255,92 +235,4 @@ body {
 .gemContainer .gemDiv:first-child, .gemContainer .gemDiv:last-child{
   position: relative;
   top: 35px;
-}
-
-.vendingMachine{
-  position: absolute;
-  bottom: 10vh;
-  left: 130vw;
-}
-.vendingContainer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.numberDiv{
-  position: absolute;
-  height: 210px;
-  width: 150px;
-  top: 70px;
-  left: 68px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20px;
-  width: 20px;
-  padding: 5px;
-  margin: 0 .6vh;
-  font-size: 1.5rem;
-}
-.numbersDisplay{
-  display: none;
-  font-size: 50px;
-  width: 300px;
-  height: 100px;
-  background-color: lightgray;
-  border: 5px solid maroon;
-  border-radius: 30px;
-  transform: translateY(-500px);
-}
-.numbersShow{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.blueDiv{
-  display: none;
-  position:absolute;
-  bottom: 2vw;
-  left: 7vw;
-}
-#blueGem{
-  height: 2vw;
-  width: 2vw;
-}
-.blueDiv .sparkle{
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.vortex{
-  position: absolute;
-  transform: scale(0);
-  -webkit-transition: transform 3s;
-  -o-transition: transform 3s;
-  transition: transform 3s;
-}
-
-.big{
-  transform: scale(3);
-}
-.end{
-  transform: rotate(720deg) scale(0) translate(-30vh, 50vh);
-}
-
-.victory {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: -100vh;
-  height: 100%;
-  width: 100%;
-  background: black;
-  z-index: 100;
 }
